@@ -184,12 +184,8 @@ public class KeyboxDataPreference extends Preference {
             return false;
         }
 
-        boolean hasValidEc = hasEcdsaKey && hasEcdsaPrivKey && ecdsaCertCount >= 1;
-        boolean hasValidRsa = hasRsaKey && hasRsaPrivKey && rsaCertCount >= 1;
-
-        boolean ecOk = !hasEcdsaKey || hasValidEc;
-        boolean rsaOk = !hasRsaKey || hasValidRsa;
-
-        return numberOfKeyboxes == 1 && (hasValidEc || hasValidRsa) && ecOk && rsaOk;
+        return numberOfKeyboxes == 1
+                && hasEcdsaKey && hasEcdsaPrivKey && ecdsaCertCount >= 1
+                && hasRsaKey && hasRsaPrivKey && rsaCertCount >= 1;
     }
 }
