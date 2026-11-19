@@ -200,6 +200,10 @@ import com.android.settings.security.LockscreenDashboardFragment;
 import com.android.settings.security.MemtagPage;
 import com.android.settings.security.SecurityAdvancedSettings;
 import com.android.settings.security.SecuritySettings;
+import com.android.settings.security.spoof.PifSettings;
+import com.android.settings.security.spoof.PixelPropsSettings;
+import com.android.settings.security.spoof.SpoofingSettings;
+import com.android.settings.security.spoof.TrickyStoreSettings;
 import com.android.settings.shortcut.CreateShortcut;
 import com.android.settings.sound.MediaControlsSettings;
 import com.android.settings.supervision.SupervisionDashboardFragment;
@@ -277,6 +281,10 @@ public class SettingsGateway {
             SecuritySettings.class.getName(),
             SecurityAdvancedSettings.class.getName(),
             MoreSecurityPrivacyFragment.class.getName(),
+            SpoofingSettings.class.getName(),
+            PifSettings.class.getName(),
+            PixelPropsSettings.class.getName(),
+            TrickyStoreSettings.class.getName(),
             UsageAccessDetails.class.getName(),
             PrivacySettings.class.getName(),
             DeviceAdminSettings.class.getName(),

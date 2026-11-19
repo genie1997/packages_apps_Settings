@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.android.settings.development.spoof;
+package com.android.settings.security.spoof;
 
 import com.android.settings.R;
 

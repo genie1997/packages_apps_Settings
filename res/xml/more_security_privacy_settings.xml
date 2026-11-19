@@ -262,6 +262,13 @@
     </Preference>
 
     <Preference
+        android:order="320"
+        android:key="spoofing_settings"
+        android:title="@string/spoofing_title"
+        android:summary="@string/spoofing_summary"
+        android:fragment="com.android.settings.security.spoof.SpoofingSettings" />
+
+    <Preference
         android:order="91"
         android:key="hide_developer_status_settings"
         android:title="@string/hide_developer_status_title"
